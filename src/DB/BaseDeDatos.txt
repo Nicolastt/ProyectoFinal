@@ -1,0 +1,3 @@
+Nico,nico,1111,Estudiante
+Martin,martin,2222,Profesor
+Ricardo,richi,3333,Técnico
