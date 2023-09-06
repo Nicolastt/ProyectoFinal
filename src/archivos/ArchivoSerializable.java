@@ -14,7 +14,8 @@ public class ArchivoSerializable {
     private ObjectOutputStream objectOP = null;
 
     public void escribirArchivoSerial(Persona persona, HoraFecha horaFecha, String texto) {
-        String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
+        //String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
+        String ruta = "C:\\Users\\Usuario\\Documents\\WorkSpace\\ProyectoFinal\\ArchivosEscritos\\archivoSerial.txt";
         File fl = new File(ruta);
 
         try {
@@ -43,7 +44,8 @@ public class ArchivoSerializable {
     }
 
     public void leerArchivoSerial() {
-        String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
+        //String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
+        String ruta = "C:\\Users\\Usuario\\Documents\\WorkSpace\\ProyectoFinal\\ArchivosEscritos\\archivoSerial.txt";
         File fl = new File(ruta);
 
         try {

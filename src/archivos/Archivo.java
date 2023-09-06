@@ -9,7 +9,8 @@ public class Archivo {
 
     public void escribirArchivo(Estudiante est, HoraFecha horaF, String text){
 
-        String ruta = ".\\ArchivosEscritos\\archivoNormal.txt";
+        //String ruta = ".\\ArchivosEscritos\\archivoNormal.txt";
+        String ruta = "C:\\Users\\Usuario\\Documents\\WorkSpace\\ProyectoFinal\\ArchivosEscritos\\archivoNormal.txt";
         File fl1 = new File(ruta);
 
         try {

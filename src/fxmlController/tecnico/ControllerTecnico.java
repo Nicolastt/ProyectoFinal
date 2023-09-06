@@ -13,6 +13,7 @@ import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class ControllerTecnico implements Initializable {
@@ -51,15 +52,12 @@ public class ControllerTecnico implements Initializable {
         Parent root = null;
 
         try {
-
-            root = FXMLLoader.load(getClass().getResource(pagina + ".fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(pagina + ".fxml")));
         }catch (IOException e){
-
             System.out.println(e.getMessage());
         }
 
         bp.setCenter(root);
-
     }
 
     @Override

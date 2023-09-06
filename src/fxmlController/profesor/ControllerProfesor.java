@@ -69,6 +69,4 @@ public class ControllerProfesor implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
-
-
 }

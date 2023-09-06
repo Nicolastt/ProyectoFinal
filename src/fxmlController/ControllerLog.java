@@ -49,7 +49,6 @@ public class ControllerLog implements Initializable {
     @FXML
     private TextField txtUsuario;
     private MsgAlerta alerta = new MsgAlerta();
-    private HoraFecha horaFecha = new HoraFecha();
     private ArchivoSerializable archSerial = new ArchivoSerializable();
     private ControllerStP controllerStP = new ControllerStP();
 
@@ -70,7 +69,7 @@ public class ControllerLog implements Initializable {
 
                     if (usuarioIngresado.equals(usuario) && passwordIngresado.equals(password)) {
                         // Usuario autenticado correctamente
-                        archSerial.escribirArchivoSerial(new Persona(nombre, usuario, password), horaFecha, "Ingresó al sistema\n");
+                        archSerial.escribirArchivoSerial(new Persona(nombre, usuario, password), new HoraFecha(), "Ingresó al sistema\n");
                         controllerStP.setPer(new Persona(nombre, usuario, password));
                         btnIngreso.getScene().getWindow().hide();
                         Stage main = new Stage();
