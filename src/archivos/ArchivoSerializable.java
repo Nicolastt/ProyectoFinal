@@ -13,11 +13,11 @@ public class ArchivoSerializable {
     private FileOutputStream fileOP = null;
     private ObjectOutputStream objectOP = null;
 
-    public void escribirArchivoSerial(Persona persona, HoraFecha horaFecha, String texto){
+    public void escribirArchivoSerial(Persona persona, HoraFecha horaFecha, String texto) {
         String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
         File fl = new File(ruta);
 
-        try{
+        try {
             FileOutputStream fileOP = new FileOutputStream(fl, true);
             ObjectOutputStream objectOP = new ObjectOutputStream(fileOP);
 
@@ -26,13 +26,12 @@ public class ArchivoSerializable {
             objectOP.writeObject(texto);
         } catch (IOException e) {
             System.out.println(e.getMessage());
-        }finally {
+        } finally {
             try {
-
-                if( objectOP != null) {
+                if (objectOP != null) {
                     objectOP.close();
                 }
-                if(fileOP != null) {
+                if (fileOP != null) {
                     fileOP.close();
                 }
             } catch (IOException e) {
@@ -43,7 +42,7 @@ public class ArchivoSerializable {
         leerArchivoSerial();
     }
 
-    public void leerArchivoSerial(){
+    public void leerArchivoSerial() {
         String ruta = ".\\ArchivosEscritos\\archivoSerial.txt";
         File fl = new File(ruta);
 

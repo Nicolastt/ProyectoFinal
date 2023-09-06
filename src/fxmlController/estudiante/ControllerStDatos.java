@@ -10,7 +10,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ControllerStDatos implements Initializable {
-
     @FXML
     private TextField txtApellido;
 
@@ -30,16 +29,12 @@ public class ControllerStDatos implements Initializable {
     private TextField txtSemestre;
 
     void setDatos(Estudiante estudiante){
-
         txtNombre.setText(estudiante.getNombre());
         txtCarrera.setText(estudiante.getCarrera());
         txtCUnico.setText(estudiante.getCodigoUnico());
         txtSemestre.setText(estudiante.getSemestre());
 
     }
-
-
-
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

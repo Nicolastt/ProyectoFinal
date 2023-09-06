@@ -20,7 +20,6 @@ import java.util.ResourceBundle;
 
 
 public class ControllerStP implements Initializable {
-
     @FXML
     private AnchorPane ap;
 
@@ -49,22 +48,17 @@ public class ControllerStP implements Initializable {
 
     @FXML
     private void calificacionesAction(ActionEvent event) {
-
     }
 
     @FXML
     private void datos(MouseEvent event) {
-
         cargarPagina("/fxml/estudiante/Datos");
-
     }
 
     @FXML
     private void datosAction(ActionEvent event) {
-
         //ctrlStDatos.setDatos((Estudiante) per);
         //archSerial.escribirArchivoSerial(per, horaFecha, "Ingresó a Datos de estudiante");
-
     }
 
     @FXML
