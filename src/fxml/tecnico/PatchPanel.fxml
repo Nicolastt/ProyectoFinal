@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-    <top>
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PATCH PANEL" BorderPane.alignment="CENTER">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button layoutX="222.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Verificar" textFill="WHITE">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Button>
+        <Text layoutX="303.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PATCH PANEL">
             <font>
                 <Font name="System Bold" size="39.0" />
             </font>
         </Text>
-    </top>
-    <center>
-        <ImageView fitHeight="76.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+        <Text layoutX="57.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verificacion Entradas y Salidas           Reseteo">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="145.0" fitWidth="308.0" layoutX="144.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../images/epnLogo.png" />
+                <Image url="@../../images/path.jpg" />
             </image>
-            <BorderPane.margin>
-                <Insets left="1050.0" top="420.0" />
-            </BorderPane.margin>
         </ImageView>
-    </center>
-    <right>
-        <TextArea prefHeight="266.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-            <BorderPane.margin>
-                <Insets bottom="200.0" right="40.0" top="40.0" />
-            </BorderPane.margin>
-        </TextArea>
-    </right>
-</BorderPane>
+        <ImageView fitHeight="152.0" fitWidth="159.0" layoutX="576.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/rest.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="594.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Reset" textFill="WHITE">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Button>
+        <AnchorPane layoutY="456.0" prefHeight="127.0" prefWidth="799.0" style="-fx-background-color: black;" />
+    </children>
+</AnchorPane>
