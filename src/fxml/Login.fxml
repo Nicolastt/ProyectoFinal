@@ -14,45 +14,49 @@
 
 <BorderPane fx:id="rootP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlController.ControllerLog">
     <left>
-        <AnchorPane fx:id="subRootP" prefHeight="500.0" prefWidth="346.0" style="-fx-background-color: #011e32;" BorderPane.alignment="CENTER">
-            <children>
-                <ImageView fitHeight="285.0" fitWidth="278.0" layoutX="34.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/epnLogo.png" />
-                    </image>
-                </ImageView>
-                <Text fill="WHITE" layoutX="43.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La Escuela Politécnica Nacional, también conocida como EPN, es una universidad pública, de grado y posgrado, ubicada en Quito. Reconocida por la investigación y la educación en ciencias básicas, ingenierías y tecnología, ofrece programas doctorales, de maestría y de grado. " wrappingWidth="274.13671875" />
-            </children>
+        <AnchorPane fx:id="subRootP" prefHeight="500.0" prefWidth="346.0" style="-fx-background-color: #011e32;"
+                    BorderPane.alignment="CENTER">
+            <ImageView fitHeight="285.0" fitWidth="278.0" layoutX="34.0" layoutY="72.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@../images/epnLogo.png"/>
+            </ImageView>
+            <Text fill="WHITE" layoutX="43.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="La Escuela Politécnica Nacional, también conocida como EPN, es una universidad pública, de grado y posgrado, ubicada en Quito. Reconocida por la investigación y la educación en ciencias básicas, ingenierías y tecnología, ofrece programas doctorales, de maestría y de grado. "
+                  wrappingWidth="274.13671875"/>
         </AnchorPane>
     </left>
     <center>
         <AnchorPane fx:id="subRootP1" prefHeight="500.0" prefWidth="425.0" BorderPane.alignment="CENTER">
-            <children>
-                <PasswordField fx:id="txtPass" layoutX="95.0" layoutY="257.0" prefHeight="36.0" prefWidth="184.0" promptText="Escriba su contraseña" style="-fx-background-color: transparent; -fx-border-color: #011e32; -fx-border-width: 0px 0px 2px 0px;" />
-                <TextField fx:id="txtUsuario" layoutX="95.0" layoutY="193.0" prefHeight="35.0" prefWidth="184.0" promptText="Escriba su usuario" style="-fx-background-color: transparent; -fx-border-color: #011e32; -fx-border-width: 0px 0px 2px 0px;" />
-                <Button fx:id="btnIngreso" layoutX="146.0" layoutY="341.0" mnemonicParsing="false" onAction="#actionIngreso" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #012d4b;" text="Ingresar" textFill="WHITE" />
-                <Hyperlink fx:id="hylFPass" layoutX="114.0" layoutY="384.0" prefHeight="24.0" prefWidth="144.0" text="¿Olvidaste tu contraseña?" />
-                <Text layoutX="103.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de Sesion">
-                    <font>
-                        <Font name="Franklin Gothic Book Italic" size="24.0" />
-                    </font>
-                </Text>
-                <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="142.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/logo.png" />
-                    </image>
-                </ImageView>
-                <Label layoutX="103.0" layoutY="175.0" text="Usuario">
-                    <font>
-                        <Font name="Segoe UI Black" size="12.0" />
-                    </font>
-                </Label>
-                <Label layoutX="103.0" layoutY="241.0" text="Contraseña">
-                    <font>
-                        <Font name="Segoe UI Black" size="12.0" />
-                    </font>
-                </Label>
-            </children>
+            <PasswordField fx:id="txtPass" layoutX="95.0" layoutY="257.0" prefHeight="36.0" prefWidth="184.0"
+                           promptText="Escriba su contraseña"
+                           style="-fx-background-color: transparent; -fx-border-color: #011e32; -fx-border-width: 0px 0px 2px 0px;"/>
+            <TextField fx:id="txtUsuario" layoutX="95.0" layoutY="193.0" prefHeight="35.0" prefWidth="184.0"
+                       promptText="Escriba su usuario"
+                       style="-fx-background-color: transparent; -fx-border-color: #011e32; -fx-border-width: 0px 0px 2px 0px;"/>
+            <Button fx:id="btnIngreso" layoutX="146.0" layoutY="341.0" mnemonicParsing="false" onAction="#actionIngreso"
+                    prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #012d4b;" text="Ingresar"
+                    textFill="WHITE"/>
+            <Hyperlink fx:id="hylFPass" layoutX="114.0" layoutY="384.0" prefHeight="24.0" prefWidth="144.0"
+                       text="¿Olvidaste tu contraseña?"/>
+            <Text layoutX="103.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de Sesion">
+                <font>
+                    <Font name="Franklin Gothic Book Italic" size="24.0"/>
+                </font>
+            </Text>
+            <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="142.0" layoutY="49.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@../images/logo.png"/>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="175.0" text="Usuario">
+                <font>
+                    <Font name="Segoe UI Black" size="12.0"/>
+                </font>
+            </Label>
+            <Label layoutX="103.0" layoutY="241.0" text="Contraseña">
+                <font>
+                    <Font name="Segoe UI Black" size="12.0"/>
+                </font>
+            </Label>
         </AnchorPane>
     </center>
 </BorderPane>

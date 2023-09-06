@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <Button layoutX="222.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Verificar" textFill="WHITE">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlController.tecnico.ControllerTemperatura">
+    <Button layoutX="187.0" layoutY="306.0" mnemonicParsing="false" onAction="#verificarTemperatura" prefHeight="52.0" prefWidth="173.0" style="-fx-background-color: black;" text="Verificar" textFill="WHITE">
+        <font>
+            <Font size="31.0" />
+        </font>
+    </Button>
+
+    <Text layoutX="303.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Refrigeration">
+        <font>
+            <Font name="System Bold" size="39.0" />
+        </font>
+    </Text>
+    <Text layoutX="57.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       Estado Temperatura              Enfriamiento">
+        <font>
+            <Font name="System Bold" size="31.0" />
+        </font>
+    </Text>
+    <ImageView fitHeight="145.0" fitWidth="308.0" layoutX="144.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/conte.jpg" />
+    </ImageView>
+    <ImageView fitHeight="154.0" fitWidth="239.0" layoutX="515.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../images/enf.jpg" />
+    </ImageView>
+    <Button layoutX="594.0" layoutY="306.0" mnemonicParsing="false" onAction="#enfriar" style="-fx-background-color: black;" text="Enfriar" textFill="WHITE">
+        <font>
+            <Font size="31.0" />
+        </font>
+    </Button>
+    <AnchorPane layoutY="456.0" prefHeight="127.0" prefWidth="799.0" style="-fx-background-color: black;">
+        <Label fx:id="temperaturaLabel" layoutX="10.0" layoutY="41.0" prefHeight="45.0" prefWidth="815.0" text=""
+               textFill="WHITE">
             <font>
-                <Font size="31.0" />
+                <Font size="30.0"/>
             </font>
-        </Button>
-        <Text layoutX="303.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Refrigeration">
-            <font>
-                <Font name="System Bold" size="39.0" />
-            </font>
-        </Text>
-        <Text layoutX="57.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       Estado Temperatura              Enfriamiento">
-            <font>
-                <Font name="System Bold" size="31.0" />
-            </font>
-        </Text>
-        <ImageView fitHeight="145.0" fitWidth="308.0" layoutX="144.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../../images/conte.jpg" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="154.0" fitWidth="239.0" layoutX="515.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../../images/enf.jpg" />
-            </image>
-        </ImageView>
-        <Button layoutX="594.0" layoutY="306.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Enfriar" textFill="WHITE">
-            <font>
-                <Font size="31.0" />
-            </font>
-        </Button>
-        <AnchorPane layoutY="456.0" prefHeight="127.0" prefWidth="799.0" style="-fx-background-color: black;" />
-    </children>
+        </Label>
+    </AnchorPane>
 </AnchorPane>
