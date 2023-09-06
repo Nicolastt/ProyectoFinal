@@ -29,6 +29,11 @@ public class ControllerProfesor implements Initializable {
     private AnchorPane ap;
 
     @FXML
+    void ActionEstudiantes(ActionEvent event){
+
+    }
+
+    @FXML
     void ActionCursos(ActionEvent event) {
 
     }

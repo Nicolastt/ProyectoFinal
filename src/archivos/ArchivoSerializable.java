@@ -18,7 +18,7 @@ public class ArchivoSerializable {
         File fl = new File(ruta);
 
         try {
-            FileOutputStream fileOP = new FileOutputStream(fl, true);
+            FileOutputStream fileOP = new FileOutputStream(fl);
             ObjectOutputStream objectOP = new ObjectOutputStream(fileOP);
 
             objectOP.writeObject(persona);

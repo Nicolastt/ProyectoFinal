@@ -48,10 +48,10 @@ public class ControllerLog implements Initializable {
 
     @FXML
     private TextField txtUsuario;
-    MsgAlerta alerta = new MsgAlerta();
-    HoraFecha horaFecha = new HoraFecha();
-    ArchivoSerializable archSerial = new ArchivoSerializable();
-    ControllerStP controllerStP = new ControllerStP();
+    private MsgAlerta alerta = new MsgAlerta();
+    private HoraFecha horaFecha = new HoraFecha();
+    private ArchivoSerializable archSerial = new ArchivoSerializable();
+    private ControllerStP controllerStP = new ControllerStP();
 
     @FXML
     void actionIngreso(ActionEvent event) {
@@ -79,6 +79,7 @@ public class ControllerLog implements Initializable {
                         // Tomar acciones específicas en función del rol del usuario
                         switch (rol) {
                             case "Estudiante":
+
                                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/estudiante/StudentPage.fxml")));
                                 break;
                             case "Profesor":

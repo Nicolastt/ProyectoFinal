@@ -1,6 +1,7 @@
 package fxmlController.estudiante;
 
 
+import model.Estudiante;
 import model.HoraFecha;
 import archivos.ArchivoSerializable;
 import javafx.event.ActionEvent;
@@ -48,6 +49,7 @@ public class ControllerStP implements Initializable {
 
     @FXML
     private void calificacionesAction(ActionEvent event) {
+        archSerial.escribirArchivoSerial(per, horaFecha, "Ingresó a la pestaña de Calificaciones");
     }
 
     @FXML
@@ -57,8 +59,8 @@ public class ControllerStP implements Initializable {
 
     @FXML
     private void datosAction(ActionEvent event) {
-        //ctrlStDatos.setDatos((Estudiante) per);
-        //archSerial.escribirArchivoSerial(per, horaFecha, "Ingresó a Datos de estudiante");
+        ctrlStDatos.setDatos((Estudiante) per);
+        archSerial.escribirArchivoSerial(per, horaFecha, "Ingresó a Datos de estudiante");
     }
 
     @FXML
@@ -69,7 +71,7 @@ public class ControllerStP implements Initializable {
 
     @FXML
     private void materiasAction(ActionEvent event) {
-
+        archSerial.escribirArchivoSerial(per, horaFecha, "Ingresó a la pestaña de Materias");
     }
 
     private void cargarPagina(String pagina) {

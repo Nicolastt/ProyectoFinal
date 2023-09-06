@@ -1,5 +1,6 @@
 package fxmlController.tecnico;
 
+import archivos.ArchivoSerializable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,24 +33,8 @@ public class ControllerTecnico implements Initializable {
     private AnchorPane ap;
 
     @FXML
-    void PatchPanelAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void SrAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void UpsAction(ActionEvent event) {
-
-    }
-
-    @FXML
     void Upss(MouseEvent event) {
         cargarPagina("/fxml/tecnico/Ups");
-
     }
 
     @FXML

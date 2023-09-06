@@ -13,7 +13,7 @@ public class Archivo {
         File fl1 = new File(ruta);
 
         try {
-            FileWriter fr1 = new FileWriter(fl1);
+            FileWriter fr1 = new FileWriter(fl1, true);
             BufferedWriter bw1 = new BufferedWriter(fr1);
 
             bw1.write(est.toString());
